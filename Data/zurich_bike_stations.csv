@@ -1,0 +1,17 @@
+column,station_id,name,direction_in,direction_out
+langstrasse_underpass_north,2989,Langstrasse (Unterführung Nord),Helvetiaplatz,Limmatplatz
+langstrasse_underpass_south,4249,Langstrasse (Unterführung Süd),Limmatplatz,Helvetiaplatz
+hardbruecke_south,1037,Hardbrücke Süd (Seite HB),Escher-Wyss-Platz,Hardplatz
+limmatquai_central,4267,Limmatquai --> Central,Central,
+bertastrasse,4266,Bertastrasse neu,Wiedikon,Aussersihl
+muehlebachstrasse,4270,Mühlebachstrasse,Bellevue,Riesbach
+mythenquai,5002,Mythenquai,Innenstadt,Wollishofen
+bucheggplatz,3012,Bucheggplatz,Hofwiesenstrasse,Höngg
+hardbruecke_north,732,Hardbrücke Nord (Seite Altstetten),Escher-Wyss-Platz,Hardplatz
+lux_guyer_weg,2997,Lux-Guyer-Weg,Innenstadt,Wipkingen
+langstrasse_road_north,4242,Langstrasse (Fahrbahn Nord),Helvetiaplatz,---
+hofwiesenstrasse,4258,Hofwiesenstrasse,Bucheggplatz,---
+langstrasse_road_south,4241,Langstrasse (Fahrbahn Süd),Limmatplatz,---
+militaerbruecke,4262,Militärbrücke,Bahnhofstrasse,Langstrasse
+tannenrauchstrasse,4269,Tannenrauchstrasse,Innenstadt,Wollishofen
+toedistrasse,4255,Tödistrasse,Seeufer,Hauptbahnhof
