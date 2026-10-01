@@ -16,6 +16,7 @@ Welcome to the **Machine Learning Basics Course**! This course is designed to pr
    - [K-Nearest Neighbors (KNN)](#knn)
    - [K-Means Clustering](#k-means)
    - [Neural Networks](#neural-networks)
+6. [Exercises Week 06](#exercises-week-06)
 
 ## Introduction
 
@@ -132,3 +133,11 @@ K-Means is an unsupervised learning algorithm used to partition a dataset into d
 
 - **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
 - **In scikit-learn:** https://scikit-learn.org/stable/modules/neural_networks_supervised.html
+
+## Exercises Week 06
+
+The folder [Exercises_Week_06](Exercises_Week_06/) contains seven exercises with real data sets for the slides
+*Week 06: Supervised Learning*. They cover learning from data, linear regression, regression trees and ensembles, logistic
+regression and evaluation, classification trees and ensembles, k-NN, Naive Bayes, SVM, clustering and PCA. Each
+exercise has a short concept recap, an exercise notebook and a solution notebook. See the
+[overview](Exercises_Week_06/README.md) for details and data sources.
