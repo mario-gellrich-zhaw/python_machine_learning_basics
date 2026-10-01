@@ -30,7 +30,7 @@ Each module has its own folder with:
 - `<name>_solution.ipynb`: the same notebook with complete code and written solutions.
 
 Read the concept notebook first, then work on the exercise notebook and use the solution only to check your work. All
-data sets are stored in the common folder [Data](Data/).
+data sets are stored in the common folder [00_Data](00_Data/).
 
 ## Requirements
 
@@ -50,9 +50,9 @@ Each exercise notebook works with exactly **one** data set.
 
 | Folder | Slides | Data | Methods and concepts |
 |---|---|---|---|
-| [01_Learning_from_Data](01_Learning_from_Data/) | Part 02 | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression) |
-| [02_Linear_Regression](02_Linear_Regression/) | Part 03 | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, maximum likelihood |
-| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Part 03 | Bike counts Zurich (Mythenquai) | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison |
+| [01_Learning_from_Data](01_Learning_from_Data/) | Part 02 | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
+| [02_Linear_Regression](02_Linear_Regression/) | Part 03 | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
+| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Part 03 | Bike counts Zurich (Mythenquai) | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
 | [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Part 04 | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
 | [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Part 04 | Titanic | Gini by hand, the tree of the slides, leaf probabilities, pruning, averaging in a random forest, the slide «Putting it together in scikit-learn», gradient boosting, ROC comparison |
 | [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Part 04 | Titanic | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and with categorical features |
@@ -64,7 +64,7 @@ Each folder contains `<topic>_concept.ipynb`, `<topic>_exercise.ipynb` and `<top
 
 ## Neural Networks
 
-The folder [Neural_Networks](Neural_Networks/) contains notebooks on simple neural networks, multi-layer perceptrons and convolutional neural networks.
+The folder [08_Neural_Networks](08_Neural_Networks/) contains notebooks on simple neural networks, multi-layer perceptrons and convolutional neural networks.
 
 - **Introduction:** Overview of neural networks and their biological inspiration.
 - **Mathematical Foundations:** Understanding perceptrons, activation functions, backpropagation, and gradient descent.
@@ -77,9 +77,9 @@ The folder [Neural_Networks](Neural_Networks/) contains notebooks on simple neur
 
 ## Data
 
-All data sets are stored in the folder [Data](Data/), so no Kaggle account or download is needed. The script
-[Data/prepare_data.py](Data/prepare_data.py) documents how the files were created from the original sources and can be
-used to re-create them (`python Data/prepare_data.py`).
+All data sets are stored in the folder [00_Data](00_Data/), so no Kaggle account or download is needed. The script
+[00_Data/prepare_data.py](00_Data/prepare_data.py) documents how the files were created from the original sources and can be
+used to re-create them (`python 00_Data/prepare_data.py`).
 
 | File | Content | Source |
 |---|---|---|

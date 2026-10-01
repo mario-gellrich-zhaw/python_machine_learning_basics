@@ -1,6 +1,6 @@
 """Download the raw data from the original sources and create the cleaned data sets in this folder.
 
-Run from the repository root:  python Data/prepare_data.py
+Run from the repository root:  python 00_Data/prepare_data.py
 
 Created files
 - zurich_bike_counts_2024_2025.csv   daily bike counts at 16 counting stations in Zurich + weather + calendar
