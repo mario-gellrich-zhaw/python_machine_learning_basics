@@ -8,29 +8,25 @@ Welcome to the **Machine Learning Basics Course**! This course is designed to pr
 2. [Course Structure](#course-structure)
 3. [Requirements](#requirements)
 4. [Installation](#installation)
-5. [Machine Learning Algorithms](#machine-learning-algorithms)
-   - [Linear Regression](#linear-regression)
-   - [Logistic Regression](#logistic-regression)
-   - [Classification and Regression Trees (CART)](#cart)
-   - [Random Forest](#random-forest)
-   - [K-Nearest Neighbors (KNN)](#knn)
-   - [K-Means Clustering](#k-means)
-   - [Neural Networks](#neural-networks)
-6. [Exercises Week 06](#exercises-week-06)
+5. [Modules](#modules)
+6. [Neural Networks](#neural-networks)
+7. [Data Sources](#data-sources)
 
 ## Introduction
 
 This course is designed for beginners who are new to machine learning. It will walk you through the fundamental concepts and algorithms that are widely used in the industry. By the end of this course, you should be able to understand, implement, and apply these algorithms to real-world problems.
 
+The modules accompany the slides *Week 06: Supervised Learning* (Parts 02–05). Neural networks are covered separately.
+
 ## Course Structure
 
-Each explanation of Machine Learning (ML) algorithms follows a consistent structure:
+Each module has its own folder:
 
-- **Introduction:** A brief overview of the algorithm, including its purpose and use cases.
-- **Mathematical Foundations:** The key mathematical concepts and equations behind the algorithm.
-- **Implementation:** Step-by-step code examples to implement the algorithm from scratch.
-- **Practical Applications:** How to apply the algorithm to real-world datasets.
-- **Exercises:** Hands-on exercises to reinforce the concepts learned.
+- `*_exercise.ipynb`: **Concept** (a short recap of the slides), followed by the **Exercises**. Each exercise starts with calculations by hand, as on the slides, and continues in Python with real data.
+- `*_solution.ipynb`: the same notebook with complete code and written solutions.
+- `Data/`: the data used in the module.
+
+Work on the exercise notebook first and use the solution only to check your work.
 
 ## Requirements
 
@@ -44,100 +40,46 @@ https://github.com/mario-gellrich-zhaw/python_machine_learning_basics
 
 Create a new GitHub Codespaces environment based on the fork.
 
-## Machine Learning Algorithms
+## Modules
 
-### Linear Regression
+| # | Folder | Slides | Dataset | Methods and concepts |
+|---|---|---|---|---|
+| 01 | [01_Learning_from_Data](01_Learning_from_Data/) | Part 02 | Capital Bikeshare daily rentals, Washington D.C. | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression) |
+| 02 | [02_Linear_Regression](02_Linear_Regression/) | Part 03 | Medical insurance costs (US) | OLS by hand, simple and multiple regression, R², RMSE, residual diagnostics, interaction, confidence vs. prediction interval, VIF, maximum likelihood |
+| 03 | [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Part 03 | Concrete compressive strength | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison |
+| 04 | [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Part 04 | Telco customer churn | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC |
+| 05 | [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Part 04 | Heart disease (5 hospitals) | Gini by hand, classification tree, pruning, random forest and gradient boosting with `GridSearchCV`, ROC comparison, threshold for target recall |
+| 06 | [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Part 04 | Palmer penguins; SMS Spam Collection | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and as a spam filter |
+| 07 | [07_Clustering_PCA](07_Clustering_PCA/) | Part 05 | Country indicators (HELP International) | k-means by hand, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
 
-Linear Regression is one of the simplest and most commonly used algorithms in machine learning. It is used to model the relationship between a dependent variable and one or more independent variables.
+**Further reading:** Li, H. (2024). *Machine Learning Methods*. Springer. – scikit-learn user guide: https://scikit-learn.org/stable/user_guide.html
 
-- **Introduction:** Understanding the concept of linear relationships and the line of best fit.
-- **Mathematical Foundations:** Deriving the linear regression equation, loss function, and optimization techniques.
-- **Implementation:** Code examples using Python to implement linear regression.
-- **Practical Applications:** Applying linear regression to predict housing prices, sales forecasting, etc.
-- **Exercises:** Practice problems to solidify your understanding.
+## Neural Networks
 
-- **Mathematical Foundations:** Martin, P. (2022). Linear regression: An introduction to statistical models.
-- **In scikit-learn:** https://scikit-learn.org/stable/modules/linear_model.html
+The folder [Neural_Networks](Neural_Networks/) contains notebooks on simple neural networks, multi-layer perceptrons and convolutional neural networks.
 
-### Logistic Regression
-
-Logistic Regression is a method used for classification. In a binary case it is used to predict the probability of a binary outcome based on one or more predictor variables.
-
-- **Introduction:** Understanding the difference between linear and logistic regression.
-- **Mathematical Foundations:** Deriving the sigmoid function and the cost function for logistic regression.
-- **Implementation:** Python code examples to implement logistic regression from scratch.
-- **Practical Applications:** Applying logistic regression to classification tasks.
-- **Exercises:** Hands-on exercises to practice logistic regression.
-
-- **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
-- **In scikit-learn:** https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-
-### Classification and Regression Trees (CART)
-
-CART is a powerful algorithm used for both classification and regression tasks. It creates a tree-like model of decisions based on input features.
-
-- **Introduction:** Understanding decision trees and their applications.
-- **Mathematical Foundations:** Gini impurity (CT), Variance reduction (RT) and tree pruning techniques.
-- **Implementation:** Building a decision tree from scratch using Python.
-- **Practical Applications:** Using CART for classification and regression tasks.
-- **Exercises:** Exercises to build and evaluate decision trees.
-
-- **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
-- **In scikit-learn:** https://scikit-learn.org/stable/modules/tree.html
-
-### Random Forest
-
-Random Forest is an ensemble learning method that combines multiple decision trees to improve accuracy and prevent overfitting.
-
-- **Introduction:** Overview of ensemble learning and the concept of bagging.
-- **Mathematical Foundations:** Understanding the random forest algorithm and its parameters.
-- **Implementation:** Implementing random forests using Python's `scikit-learn` library.
-- **Practical Applications:** Applying random forests to classification and regression tasks.
-- **Exercises:** Practice problems to explore the power of random forests.
-
-- **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
-- **In scikit-learn:** https://scikit-learn.org/stable/modules/ensemble.html
-
-### K-Nearest Neighbors (KNN)
-
-KNN is a simple, non-parametric algorithm used for both classification and regression tasks. It makes predictions based on the closest training examples in the feature space.
-
-- **Introduction:** Overview of the KNN algorithm and its use cases.
-- **Mathematical Foundations:** Understanding distance metrics and decision boundaries.
-- **Implementation:** Coding KNN from scratch and using libraries like `scikit-learn`.
-- **Practical Applications:** Applying KNN to classification and regression tasks.
-- **Exercises:** Exercises to practice and fine-tune KNN models.
-
-- **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
-- **In scikit-learn:** https://scikit-learn.org/stable/modules/neighbors.html
-
-### K-Means Clustering
-
-K-Means is an unsupervised learning algorithm used to partition a dataset into distinct clusters based on feature similarity.
-
-- **Introduction:** Understanding clustering and the K-Means algorithm.
-- **Mathematical Foundations:** The K-Means objective function and the algorithm's iterative process.
-- **Implementation:** Implementing K-Means clustering from scratch and using Python libraries.
-- **Practical Applications:** Applying K-Means to clustering tasks.
-- **Exercises:** Practice problems to explore different clustering scenarios.
-
-- **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
-- **In scikit-learn:** https://scikit-learn.org/stable/modules/clustering.html#k-means
-
-### Neural Networks.
 - **Introduction:** Overview of neural networks and their biological inspiration.
 - **Mathematical Foundations:** Understanding perceptrons, activation functions, backpropagation, and gradient descent.
 - **Implementation:** Building simple neural networks from scratch and using frameworks like TensorFlow or PyTorch.
-- **Practical Applications:** Applying neural networks classification and regression tasks.
+- **Practical Applications:** Applying neural networks to classification and regression tasks.
 - **Exercises:** Exercises to build, train, and evaluate neural networks.
 
 - **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
 - **In scikit-learn:** https://scikit-learn.org/stable/modules/neural_networks_supervised.html
 
-## Exercises Week 06
+## Data Sources
 
-The folder [Exercises_Week_06](Exercises_Week_06/) contains seven exercises with real data sets for the slides
-*Week 06: Supervised Learning*. They cover learning from data, linear regression, regression trees and ensembles, logistic
-regression and evaluation, classification trees and ensembles, k-NN, Naive Bayes, SVM, clustering and PCA. Each
-exercise has a short concept recap, an exercise notebook and a solution notebook. See the
-[overview](Exercises_Week_06/README.md) for details and data sources.
+All data sets of modules 01–07 are stored in the `Data/` folders, so no Kaggle account is needed.
+
+| Dataset | Reference / source |
+|---|---|
+| Bike sharing | Fanaee-T, H. & Gama, J. (2013). Event labeling combining ensemble detectors and background knowledge. *Progress in Artificial Intelligence*. [UCI](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset), [Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset) |
+| Medical insurance costs | Lantz, B. *Machine Learning with R*. Packt. [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) |
+| Concrete compressive strength | Yeh, I.-C. (1998). Modeling of strength of high-performance concrete using artificial neural networks. *Cement and Concrete Research*, 28(12). [UCI](https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength), [Kaggle](https://www.kaggle.com/datasets/maajdl/yeh-concret-data) |
+| Telco customer churn | IBM sample data. [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) |
+| Heart failure prediction | fedesoriano (2021), combined from the UCI heart disease data sets. [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) |
+| Palmer penguins | Gorman, K. B., Williams, T. D. & Fraser, W. R. (2014). *PLoS ONE*, 9(3); Horst, A. M., Hill, A. P. & Gorman, K. B. (2020). palmerpenguins R package. [Kaggle](https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data) |
+| SMS Spam Collection | Almeida, T. A., Gómez Hidalgo, J. M. & Yamakami, A. (2011). Contributions to the study of SMS spam filtering. *ACM DocEng*. [UCI](https://archive.ics.uci.edu/dataset/228/sms+spam+collection), [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) |
+| Country data | HELP International case study. [Kaggle](https://www.kaggle.com/datasets/rohan0301/unsupervised-learning-on-country-data) |
+
+Note: the SMS data contain real, unfiltered text messages, some of which use colloquial or offensive language.
