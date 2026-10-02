@@ -1,0 +1,37 @@
+# Pylint configuration for the Jupyter Notebooks of this course.
+#
+# Check all notebooks (nbQA runs pylint on the code cells):
+#   pip install nbqa pylint
+#   nbqa pylint */*_concept.ipynb */*_solution.ipynb 08_Neural_Networks/*.ipynb
+#
+# The exercise notebooks are templates with gaps (___) for students. Check them
+# with the additional option
+#   --disable=undefined-variable,unused-import,unused-argument,unnecessary-pass
+
+[MAIN]
+# TensorFlow loads keras lazily; pylint cannot resolve tensorflow.keras
+ignored-modules=tensorflow
+
+[FORMAT]
+max-line-length=80
+
+[BASIC]
+# In a notebook, module-level variables are ordinary variables, not constants
+const-naming-style=any
+# Upper-case X (feature matrix) is the usual machine learning convention
+good-names-rgxs=^X(\d|_\w+)?$,^[A-Z]$
+# Notebook file names may contain abbreviations such as MNIST
+module-naming-style=any
+
+[MESSAGES CONTROL]
+disable=
+    # The markdown cells document the notebook
+    missing-module-docstring,
+    # All cells share one global namespace, so functions reuse names like X, y
+    redefined-outer-name,
+    # Each notebook is self-contained; similar code in other notebooks is fine
+    duplicate-code
+
+[TYPECHECK]
+# Fitted attributes of scikit-learn estimators accessed via a pipeline step
+generated-members=coef_,intercept_,support_,feature_importances_
