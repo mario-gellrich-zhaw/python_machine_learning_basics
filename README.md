@@ -25,8 +25,8 @@ Each module has its own folder with:
 - `<topic>_concept.ipynb`: the **concepts** – definitions, formulas, worked examples (computed in Python) and
   additional explanations, illustrated with small simulated examples. One concept notebook per module; it applies to
   all exercises of the module.
-- `<name>_exercise.ipynb`: the **exercises** – each starts with calculations by hand and continues in
-  Python with real data. Each exercise notebook works with exactly one data set.
+- `<name>_exercise.ipynb`: the **exercises** – each starts with calculations by hand (using a notebook
+  cell as calculator) and continues in Python with real data. Each exercise notebook works with exactly one data set.
 - `<name>_solution.ipynb`: the same notebook with complete code and written solutions.
 
 Read the concept notebook first, then work on the exercise notebook and use the solution only to check your work. All
