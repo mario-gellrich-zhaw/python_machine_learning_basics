@@ -16,16 +16,16 @@ Welcome to the **Machine Learning Basics Course**! This course is designed to pr
 
 This course is designed for beginners who are new to machine learning. It will walk you through the fundamental concepts and algorithms that are widely used in the industry. By the end of this course, you should be able to understand, implement, and apply these algorithms to real-world problems.
 
-The modules accompany the slides *Week 06: Supervised Learning* (Parts 02–05). Neural networks are covered separately.
+The modules cover supervised and unsupervised learning. Neural networks are covered separately.
 
 ## Course Structure
 
 Each module has its own folder with:
 
-- `<topic>_concept.ipynb`: the **concepts** of the slides – definitions, formulas, the worked examples of the slides
-  (recomputed in Python) and additional explanations, illustrated with small simulated examples. One concept notebook
-  per module; it applies to all exercises of the module.
-- `<name>_exercise.ipynb`: the **exercises** – each starts with calculations by hand, as on the slides, and continues in
+- `<topic>_concept.ipynb`: the **concepts** – definitions, formulas, worked examples (computed in Python) and
+  additional explanations, illustrated with small simulated examples. One concept notebook per module; it applies to
+  all exercises of the module.
+- `<name>_exercise.ipynb`: the **exercises** – each starts with calculations by hand and continues in
   Python with real data. Each exercise notebook works with exactly one data set.
 - `<name>_solution.ipynb`: the same notebook with complete code and written solutions.
 
@@ -48,15 +48,15 @@ Create a new GitHub Codespaces environment based on the fork.
 
 Each exercise notebook works with exactly **one** data set.
 
-| Folder | Slides | Data | Methods and concepts |
-|---|---|---|---|
-| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Part 02 | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
-| [02_Linear_Regression](02_Linear_Regression/) | Part 03 | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
-| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Part 03 | Bike counts Zurich (Mythenquai) | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
-| [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Part 04 | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
-| [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Part 04 | Titanic | Gini by hand, the tree of the slides, leaf probabilities, pruning, averaging in a random forest, the slide «Putting it together in scikit-learn», gradient boosting, ROC comparison |
-| [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Part 04 | Titanic | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and with categorical features |
-| [07_Clustering_PCA](07_Clustering_PCA/) | Part 05 | Bike counts Zurich | k-means by hand, features for clustering, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
+| Folder | Data | Methods and concepts |
+|---|---|---|
+| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
+| [02_Linear_Regression](02_Linear_Regression/) | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
+| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Bike counts Zurich (Mythenquai) | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
+| [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
+| [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini by hand, the example tree, leaf probabilities, pruning, averaging in a random forest, «Putting it together in scikit-learn», gradient boosting, ROC comparison |
+| [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and with categorical features |
+| [07_Clustering_PCA](07_Clustering_PCA/) | Bike counts Zurich | k-means by hand, features for clustering, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
 
 Each folder contains `<topic>_concept.ipynb`, `<topic>_exercise.ipynb` and `<topic>_solution.ipynb`.
 
