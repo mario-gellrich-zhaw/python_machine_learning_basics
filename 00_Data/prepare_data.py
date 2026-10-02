@@ -8,6 +8,9 @@ Created files
 - titanic.csv                        Titanic passengers (Kaggle)
 
 rental_apartments_canton_zh.csv (ZHAW course data) is not downloaded; it is part of the repository.
+
+The CSV files in this folder are the reference versions used in the notebooks. The original sources may change or
+become unavailable; in that case the script reports it and keeps the existing file.
 """
 import io
 import json
@@ -103,6 +106,10 @@ def prepare_titanic():
 
 
 if __name__ == '__main__':
-    prepare_cars()
-    prepare_avalanches()
-    prepare_titanic()
+    # Each source is prepared separately: if one source is not reachable, the others are still prepared and the
+    # existing CSV file of the unreachable source in this folder stays unchanged.
+    for prepare in [prepare_cars, prepare_avalanches, prepare_titanic]:
+        try:
+            prepare()
+        except (OSError, ValueError, KeyError, zipfile.BadZipFile) as e:
+            print(f'{prepare.__name__}: source not reachable or changed ({e}); the existing CSV file is kept.')

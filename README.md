@@ -42,7 +42,14 @@ To follow along with this course, you will need a GitHub account and knowledge a
 
 https://github.com/mario-gellrich-zhaw/python_machine_learning_basics
 
-Create a new GitHub Codespaces environment based on the fork.
+Create a new GitHub Codespaces environment based on the fork. The Codespace uses Python 3.11 and installs all required
+packages automatically (from `requirements.txt`) when it is created.
+
+**Working on your own computer instead:** install Python 3.11 and then the required packages with
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Modules
 
@@ -58,7 +65,7 @@ Each exercise notebook works with exactly **one** data set.
 | [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and with categorical features |
 | [07_Clustering_PCA](07_Clustering_PCA/) | Car fuel consumption 2025 (makes and models) | k-means by hand, features for clustering, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
 
-Each folder contains `<topic>_concept.ipynb`, `<topic>_exercise.ipynb` and `<topic>_solution.ipynb`.
+Each of the folders 01–07 contains `<topic>_concept.ipynb`, `<topic>_exercise.ipynb` and `<topic>_solution.ipynb`.
 
 **Further reading:** Li, H. (2024). *Machine Learning Methods*. Springer. – scikit-learn user guide: https://scikit-learn.org/stable/user_guide.html
 
@@ -79,7 +86,8 @@ The folder [08_Neural_Networks](08_Neural_Networks/) contains notebooks on simpl
 
 All data sets are stored in the folder [00_Data](00_Data/), so no Kaggle account or download is needed. The script
 [00_Data/prepare_data.py](00_Data/prepare_data.py) documents how the files were created from the original sources and can be
-used to re-create them (`python 00_Data/prepare_data.py`).
+used to re-create them (`python 00_Data/prepare_data.py`). The CSV files in the repository are the reference versions
+used in the notebooks; the original sources may change or become unavailable over time.
 
 | File | Content | Source |
 |---|---|---|
