@@ -53,19 +53,19 @@ pip install -r requirements.txt
 
 ## Modules
 
-Each exercise notebook works with one data set. The modules follow the topics and learning objectives of [the lecture slides](Slides_MSc_Data_Science_Week_06_EN.pdf). The slide references appear in the concept notebooks.
+Each exercise notebook works with one data set.
 
-| Folder | Data | Core topics | Slides |
-|---|---|---|---|
-| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Car fuel consumption 2025 | ML paradigms and history; loss, objective and metric; MSE/RMSE/MAE; train/test; 5-fold CV; under-/overfitting and bias–variance | 5–17 |
-| [02_Linear_Regression](02_Linear_Regression/) | Zurich rental apartments | OLS; coefficients; simple and multiple regression; R²/RMSE; confidence and prediction intervals; assumptions and residual diagnostics; maximum likelihood and gradient descent | 19–27 |
-| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Car fuel consumption 2025 | SSE splits and leaf means; tree parameters and pruning; bagging and OOB; random forest and permutation importance; boosting; CV comparison | 28–37 |
-| [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Swiss avalanche accident records | Linear score and sigmoid; log-loss; confusion matrix; accuracy, precision, recall, F1 and FPR; fixed thresholds and error costs; ROC/AUC; input availability | 39, 48–50 |
-| [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini split; tree rules and leaf probabilities; pruning; random forest and boosting; fully provided small GridSearchCV example | 40–44, 57 |
-| [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | Neighbours and distance; scaling; a small k comparison; Bayes calculation and categorical Naive Bayes; SVM margin, support vectors, C and kernels | 45–47 |
-| [07_Clustering_PCA](07_Clustering_PCA/) | Car fuel consumption 2025 | Unsupervised learning; a k-means update; scaled car features; elbow plot and cluster interpretation; dendrogram; PCA outlook and explained variance | 52–56 |
+| Folder | Data | Core topics |
+|---|---|---|
+| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Car fuel consumption 2025 | ML paradigms and history; loss, objective and metric; MSE/RMSE/MAE; train/test; 5-fold CV; under-/overfitting and bias–variance |
+| [02_Linear_Regression](02_Linear_Regression/) | Zurich rental apartments | OLS; coefficients; simple and multiple regression; R²/RMSE; confidence and prediction intervals; assumptions and residual diagnostics; maximum likelihood and gradient descent |
+| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Car fuel consumption 2025 | SSE splits and leaf means; tree parameters and pruning; bagging and OOB; random forest and permutation importance; boosting; CV comparison |
+| [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Swiss avalanche accident records | Linear score and sigmoid; log-loss; confusion matrix; accuracy, precision, recall, F1 and FPR; fixed thresholds and error costs; ROC/AUC; input availability |
+| [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini split; tree rules and leaf probabilities; pruning; random forest and boosting; fully provided small GridSearchCV example |
+| [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | Neighbours and distance; scaling; a small k comparison; Bayes calculation and categorical Naive Bayes; SVM margin, support vectors, C and kernels |
+| [07_Clustering_PCA](07_Clustering_PCA/) | Car fuel consumption 2025 | Unsupervised learning; a k-means update; scaled car features; elbow plot and cluster interpretation; dendrogram; PCA outlook and explained variance |
 
-The worked calculations, guided exercises and interpretation questions cover the learning objectives on slide 58. Topics such as cross-validation, grid search and plotting have complete example code so that students can focus on the model and its results.
+The worked calculations, guided exercises and interpretation questions cover the learning objectives of each module. Topics such as cross-validation, grid search and plotting have complete example code so that students can focus on the model and its results.
 
 The avalanche notebook models fatal outcomes **among recorded accidents** with burial information available after an accident. It does not predict avalanche occurrence before a trip. Titanic examples use rows with known age and fare for simple preparation; excluding missing rows may affect representativeness.
 
