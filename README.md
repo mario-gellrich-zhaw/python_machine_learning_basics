@@ -50,13 +50,13 @@ Each exercise notebook works with exactly **one** data set.
 
 | Folder | Data | Methods and concepts |
 |---|---|---|
-| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
+| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Car fuel consumption 2025 | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
 | [02_Linear_Regression](02_Linear_Regression/) | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
-| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Bike counts Zurich (Mythenquai) | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
+| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Car fuel consumption 2025 | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
 | [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
 | [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini by hand, the example tree, leaf probabilities, pruning, averaging in a random forest, «Putting it together in scikit-learn», gradient boosting, ROC comparison |
 | [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and with categorical features |
-| [07_Clustering_PCA](07_Clustering_PCA/) | Bike counts Zurich | k-means by hand, features for clustering, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
+| [07_Clustering_PCA](07_Clustering_PCA/) | Car fuel consumption 2025 (makes and models) | k-means by hand, features for clustering, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
 
 Each folder contains `<topic>_concept.ipynb`, `<topic>_exercise.ipynb` and `<topic>_solution.ipynb`.
 
@@ -85,10 +85,5 @@ used to re-create them (`python 00_Data/prepare_data.py`).
 |---|---|---|
 | `apartments_data_enriched_cleaned.csv` | 774 rental apartments in the canton of Zurich (rooms, living area, rent, municipality data) | ZHAW course data (web-scraped rental listings) |
 | `titanic.csv` | 891 passengers of the Titanic | [Kaggle](https://www.kaggle.com/datasets/yasserh/titanic-dataset) |
-| `zurich_bike_counts_2024_2025.csv` | daily bike counts at 16 automatic counting stations in the city of Zurich (674 days in 2024–2025), with weather (station Stampfenbachstrasse), public holidays and school holidays | [Open Data Stadt Zürich](https://data.stadt-zuerich.ch/dataset/ted_taz_verkehrszaehlungen_werte_fussgaenger_velo): bike counts (Tiefbauamt), [daily weather data](https://data.stadt-zuerich.ch/dataset/ugz_meteodaten_tagesmittelwerte) (UGZ); licence CC0 |
-| `zurich_bike_stations.csv` | names and directions of the 16 counting stations | [Geoportal Stadt Zürich](https://data.stadt-zuerich.ch/dataset/geo_standorte_der_automatischen_fuss__und_velozaehlungen); licence CC0 |
+| `car_fuel_consumption_2025.csv` | 701 new car models of model year 2025 (make, model, vehicle class, engine size, cylinders, transmission, fuel type, fuel consumption city/highway/combined in L/100 km, km per litre, CO₂ emissions) | Natural Resources Canada, [Fuel consumption ratings](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64); [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada) |
 | `avalanche_accidents_switzerland.csv` | 4'188 avalanche accidents in Switzerland since 1970/71 (location, terrain, danger level, activity, persons caught, buried and killed) | WSL Institute for Snow and Avalanche Research SLF, [EnviDat](https://www.envidat.ch/dataset/avalanche-accidents-in-switzerland-since-1970-71); [SLF terms of use](https://www.slf.ch/en/services-and-products/data-and-monitoring/slf-data-service.html) |
-| `shark_attacks_2000_2025.csv` | 2'566 shark incidents worldwide 2000–2025 (activity, species, injury, fatal) | [Global Shark Attack File](https://www.sharkattackfile.net/incidentlog.htm) (also the source of [sharkdatalab.com](https://www.sharkdatalab.com/en)) |
-
-The shark data are currently not used in the exercises; they are kept as an additional data set (e.g. for text
-classification with Naive Bayes). Note: they contain short descriptions of injuries, some of which are graphic.
