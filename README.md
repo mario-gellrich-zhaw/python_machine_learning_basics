@@ -51,7 +51,7 @@ Each exercise notebook works with exactly **one** data set.
 | Folder | Data | Methods and concepts |
 |---|---|---|
 | [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Car fuel consumption 2025 | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
-| [02_Linear_Regression](02_Linear_Regression/) | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
+| [02_Linear_Regression](02_Linear_Regression/) | Rental apartments canton of Zuerich | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
 | [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Car fuel consumption 2025 | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
 | [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
 | [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini by hand, the example tree, leaf probabilities, pruning, averaging in a random forest, «Putting it together in scikit-learn», gradient boosting, ROC comparison |
@@ -83,7 +83,7 @@ used to re-create them (`python 00_Data/prepare_data.py`).
 
 | File | Content | Source |
 |---|---|---|
-| `apartments_data_enriched_cleaned.csv` | 774 rental apartments in the canton of Zurich (rooms, living area, rent, municipality data) | ZHAW course data (web-scraped rental listings) |
+| `rental_apartments_canton_zh.csv` | 774 rental apartments in the canton of Zurich (rooms, living area, rent, municipality data) | ZHAW course data (web-scraped rental listings) |
 | `titanic.csv` | 891 passengers of the Titanic | [Kaggle](https://www.kaggle.com/datasets/yasserh/titanic-dataset) |
 | `car_fuel_consumption_2025.csv` | 701 new car models of model year 2025 (make, model, vehicle class, engine size, cylinders, transmission, fuel type, fuel consumption city/highway/combined in L/100 km, km per litre, CO₂ emissions) | Natural Resources Canada, [Fuel consumption ratings](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64); [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada) |
 | `avalanche_accidents_switzerland.csv` | 4'188 avalanche accidents in Switzerland since 1970/71 (location, terrain, danger level, activity, persons caught, buried and killed) | WSL Institute for Snow and Avalanche Research SLF, [EnviDat](https://www.envidat.ch/dataset/avalanche-accidents-in-switzerland-since-1970-71); [SLF terms of use](https://www.slf.ch/en/services-and-products/data-and-monitoring/slf-data-service.html) |

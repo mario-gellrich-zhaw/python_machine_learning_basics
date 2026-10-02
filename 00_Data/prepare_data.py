@@ -7,7 +7,7 @@ Created files
 - avalanche_accidents_switzerland.csv avalanche accidents in Switzerland since 1970/71 (SLF)
 - titanic.csv                        Titanic passengers (Kaggle)
 
-apartments_data_enriched_cleaned.csv (ZHAW course data) is not downloaded; it is part of the repository.
+rental_apartments_canton_zh.csv (ZHAW course data) is not downloaded; it is part of the repository.
 """
 import io
 import json
