@@ -20,17 +20,17 @@ The modules cover supervised and unsupervised learning. Neural networks are cove
 
 ## Course Structure
 
-Each module has its own folder with:
+Modules 01–07 each have three notebooks:
 
-- `<topic>_concept.ipynb`: the **concepts** – definitions, formulas, worked examples (computed in Python),
-  illustrated with small examples. One concept notebook per module; it applies to
-  all exercises of the module.
-- `<name>_exercise.ipynb`: the **exercises** – each starts with calculations by hand (using a notebook
-  cell as calculator) and continues in Python with real data. Each exercise notebook works with exactly one data set.
-- `<name>_solution.ipynb`: the same notebook with complete code and written solutions.
+- `<topic>_concept.ipynb`: the idea in plain language, the most important formulas, a small worked example and provided demonstration code.
+- `<topic>_exercise.ipynb`: guided practice with one data set. Data preparation and plots are provided; fill a few marked code gaps and interpret the results.
+- `<topic>_solution.ipynb`: the same steps with complete code and short explanations.
 
-Read the concept notebook first, then work on the exercise notebook and use the solution only to check your work. All
-data sets are stored in the common folder [00_Data](00_Data/).
+Read the concept notebook first. Run the exercise cells from top to bottom, replacing each `None` marked with a `# TODO` comment with the expression requested above its cell. These gaps are intentional; the affected cells cannot be used until completed. Write one or two sentences for each interpretation question, then use the solution to check your work.
+
+Basic Python knowledge is enough: variables, arithmetic, selecting data columns and calling a function. Loops for plots, cross-validation and small parameter comparisons are supplied. Mathematical symbols are explained beside the formulas; lengthy derivations are not required.
+
+All data sets are stored in [00_Data](00_Data/). The notebooks assume that their working directory is their own module folder, so the data paths start with `../00_Data/`.
 
 ## Requirements
 
@@ -53,19 +53,21 @@ pip install -r requirements.txt
 
 ## Modules
 
-Each exercise notebook works with exactly **one** data set.
+Each exercise notebook works with one data set. The modules follow the topics and learning objectives of [the lecture slides](Slides_MSc_Data_Science_Week_06_EN.pdf). The slide references appear in the concept notebooks.
 
-| Folder | Data | Methods and concepts |
-|---|---|---|
-| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Car fuel consumption 2025 | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
-| [02_Linear_Regression](02_Linear_Regression/) | Rental apartments canton of Zuerich | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, location as a dummy variable, more covariates and multicollinearity, maximum likelihood |
-| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Car fuel consumption 2025 | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
-| [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
-| [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini by hand, the example tree, leaf probabilities, pruning, averaging in a random forest, «Putting it together in scikit-learn», gradient boosting, ROC comparison |
-| [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | k-NN (scaling, choice of k), SVM (margin, support vectors, C, kernel), Naive Bayes by hand and with categorical features |
-| [07_Clustering_PCA](07_Clustering_PCA/) | Car fuel consumption 2025 (makes and models) | k-means by hand, features for clustering, elbow and silhouette, cluster profiles, stability, dendrogram (Ward), PCA (explained variance, loadings) |
+| Folder | Data | Core topics | Slides |
+|---|---|---|---|
+| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Car fuel consumption 2025 | ML paradigms and history; loss, objective and metric; MSE/RMSE/MAE; train/test; 5-fold CV; under-/overfitting and bias–variance | 5–17 |
+| [02_Linear_Regression](02_Linear_Regression/) | Zurich rental apartments | OLS; coefficients; simple and multiple regression; R²/RMSE; confidence and prediction intervals; assumptions and residual diagnostics; maximum likelihood and gradient descent | 19–27 |
+| [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Car fuel consumption 2025 | SSE splits and leaf means; tree parameters and pruning; bagging and OOB; random forest and permutation importance; boosting; CV comparison | 28–37 |
+| [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Swiss avalanche accident records | Linear score and sigmoid; log-loss; confusion matrix; accuracy, precision, recall, F1 and FPR; fixed thresholds and error costs; ROC/AUC; input availability | 39, 48–50 |
+| [05_Classification_Trees_Ensembles](05_Classification_Trees_Ensembles/) | Titanic | Gini split; tree rules and leaf probabilities; pruning; random forest and boosting; fully provided small GridSearchCV example | 40–44, 57 |
+| [06_kNN_Naive_Bayes_SVM](06_kNN_Naive_Bayes_SVM/) | Titanic | Neighbours and distance; scaling; a small k comparison; Bayes calculation and categorical Naive Bayes; SVM margin, support vectors, C and kernels | 45–47 |
+| [07_Clustering_PCA](07_Clustering_PCA/) | Car fuel consumption 2025 | Unsupervised learning; a k-means update; scaled car features; elbow plot and cluster interpretation; dendrogram; PCA outlook and explained variance | 52–56 |
 
-Each of the folders 01–07 contains `<topic>_concept.ipynb`, `<topic>_exercise.ipynb` and `<topic>_solution.ipynb`.
+The worked calculations, guided exercises and interpretation questions cover the learning objectives on slide 58. Topics such as cross-validation, grid search and plotting have complete example code so that students can focus on the model and its results.
+
+The avalanche notebook models fatal outcomes **among recorded accidents** with burial information available after an accident. It does not predict avalanche occurrence before a trip. Titanic examples use rows with known age and fare for simple preparation; excluding missing rows may affect representativeness.
 
 **Further reading:** Li, H. (2024). *Machine Learning Methods*. Springer. – scikit-learn user guide: https://scikit-learn.org/stable/user_guide.html
 
