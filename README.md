@@ -50,7 +50,7 @@ Each exercise notebook works with exactly **one** data set.
 
 | Folder | Slides | Data | Methods and concepts |
 |---|---|---|---|
-| [01_Learning_from_Data](01_Learning_from_Data/) | Part 02 | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
+| [01_Model_Training_Evaluation](01_Model_Training_Evaluation/) | Part 02 | Bike counts Zurich | MSE/RMSE/MAE, train/test split, k-fold CV, under- and overfitting, bias–variance (polynomial regression), more covariates vs. more complexity |
 | [02_Linear_Regression](02_Linear_Regression/) | Part 03 | Apartments | OLS by hand, rent vs. living area, prediction for 95 m², confidence vs. prediction interval, rooms + area (ceteris paribus, VIF), residual diagnostics, interaction with the location, more covariates and multicollinearity, maximum likelihood |
 | [03_Regression_Trees_Ensembles](03_Regression_Trees_Ensembles/) | Part 03 | Bike counts Zurich (Mythenquai) | SSE split by hand, regression tree, pruning (`ccp_alpha`), bagging, random forest (OOB, `max_features`, permutation importance), gradient boosting, model comparison, additional covariates |
 | [04_Logistic_Regression_Evaluation](04_Logistic_Regression_Evaluation/) | Part 04 | Avalanche accidents Switzerland | Sigmoid by hand, logistic regression, confusion matrix and metrics, cost-based threshold, ROC/AUC, information available at prediction time |
