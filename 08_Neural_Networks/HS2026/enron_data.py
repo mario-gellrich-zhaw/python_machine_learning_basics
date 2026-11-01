@@ -71,12 +71,37 @@ def load_email_splits(source_path, max_messages=30_000, seed=7):
         return splits
     if not {'message', 'label'}.issubset(columns):
         raise ValueError('Expected prepared course features or raw message and label columns.')
-    raw = pd.read_csv(source_path, usecols=['message', 'label'])
+    fixed_text = 'split' in columns
+    text_columns = {'message', 'label', 'split', 'source_row', 'message_key'}
+    if fixed_text and not text_columns.issubset(columns):
+        raise ValueError('Prepared email text needs message, label, split, source_row and message_key columns.')
+    raw = pd.read_csv(source_path, usecols=sorted(text_columns) if fixed_text else ['message', 'label'])
     label_values = raw['label'].astype('string').str.strip().str.lower()
     labels = label_values.map({'0': 0, '1': 1, 'ham': 0, 'spam': 1})
     decoded = pd.DataFrame(raw['message'].map(_decode_message).tolist(),
                            columns=['subject', 'body', 'parse_status'], index=raw.index)
     emails = decoded.assign(label=labels, source_path=str(source_path), source_row=raw.index)
+    if fixed_text:
+        if max_messages is not None and max_messages < len(raw):
+            raise ValueError('The email text CSV has fixed splits; do not reduce MAX_MESSAGES below its row count.')
+        if labels.isna().any() or not raw['split'].isin(['train', 'validation', 'test']).all():
+            raise ValueError('Invalid labels or split names in prepared email text.')
+        source_rows = raw['source_row']
+        if (not pd.api.types.is_integer_dtype(source_rows)
+                or not source_rows.ge(0).all() or not source_rows.is_unique):
+            raise ValueError('Prepared email text needs unique, nonnegative integer source rows.')
+        normalized = (emails['subject'].fillna('') + '\n' + emails['body'].fillna('')).str.replace(r'\s+', ' ', regex=True).str.strip().str.casefold()
+        keys = normalized.map(lambda content: hashlib.sha256(content.encode('utf-8')).hexdigest())
+        if normalized.eq('').any() or not keys.is_unique or not keys.eq(raw['message_key']).all():
+            raise ValueError('Prepared email text contains empty, duplicate or mismatched message content.')
+        emails['label'] = labels.astype(int)
+        emails['source_row'] = raw['source_row']
+        emails['message_key'] = keys
+        emails['split'] = raw['split']
+        splits = tuple(emails.loc[emails['split'].eq(name)].copy() for name in ['train', 'validation', 'test'])
+        if any(split.empty for split in splits):
+            raise ValueError('Prepared email text must contain all three partitions.')
+        return splits
     emails = emails.loc[emails['label'].notna()].copy()
     emails['label'] = emails['label'].astype(int)
     normalized = (emails['subject'].fillna('') + '\n' + emails['body'].fillna('')).str.replace(r'\s+', ' ', regex=True).str.strip().str.casefold()
