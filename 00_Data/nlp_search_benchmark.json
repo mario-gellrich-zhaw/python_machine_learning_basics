@@ -1,0 +1,280 @@
+{
+  "source": "Short authentic excerpts from the existing 5,011-ad Lecture 2 cohort, supplied redacted Q3 2026 sample; not the Kaggle LinkedIn dataset.",
+  "scope": "A deliberately selected 24-excerpt catalogue, not evaluation of retrieval over all 5,011 full ads. Search only the quoted fragments, joined with an explicit omission marker. Display titles are anonymized descriptive labels and are not indexed.",
+  "judgment_status": "provisional_assistant_draft_pending_instructor_review",
+  "annotation_protocol": "Assistant-drafted queries, criteria and binary judgments. The original panel was specified before its first model execution. T03 was subsequently revised for teaching realism after inspecting the original results; its revised criterion was specified before scoring the revised query. Every excerpt is assessed for every query. A positive requires the stated evidence in the displayed fragments; absence of evidence means not established in this excerpt, not proof that the full ad is irrelevant. No independent or instructor review has yet occurred. Retain all failures; do not tune on the reported test queries.",
+  "revision_note": "2026-10-31: The user replaced T03's task-description query with the job-board query 'data engineer'. The draft criterion operationalizes data-engineering work as pipeline, ETL or ELT development/operation; R01/R02 remain draft positives. All retrieval settings and other queries are unchanged. This is a revised teaching comparison after the original test examples were inspected, not an untouched holdout evaluation.",
+  "documents": [
+    {
+      "id": "R01",
+      "title": "Data pipelines",
+      "fragments": [
+        "Entwicklung, Betrieb und Weiterentwicklung automatisierter Datenpipelines im Google-Cloud-Stack (dbt, SQL, Airflow, BigQuery) sowie Etablierung von ELT-Prozesse mittels CI/CD"
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "ETL development",
+      "fragments": [
+        "Du bindest neue Datenquellen an, entwickelst automatisierte ETL-Prozesse und stellst die Qualität, Verfügbarkeit sowie Zuverlässigkeit unserer Daten für Analysen und Reportings sicher."
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "BI analysis",
+      "fragments": [
+        "Erfahrung mit Microsoft Power BI (DAX, Datenmodellierung)Sicherer Umgang mit komplexen Excel-Analysen (Pivot, Power Query)SQL-Kenntnisse zur eigenständigen Datenabfrage und -analyse im Data Warehouse"
+      ]
+    },
+    {
+      "id": "R04",
+      "title": "Power BI reporting",
+      "fragments": [
+        "Sehr gute Kenntnisse in Power BI (DAX) und Excel setzen wir voraus.Wenn du gerne im Team arbeitest, gleichzeitig aber selbständig und eigenverantwortlich vorgehst, passt du ideal zu dieser Stelle."
+      ]
+    },
+    {
+      "id": "R05",
+      "title": "SAP architecture",
+      "fragments": [
+        "SAP RISE, SAP Business Technology Platform, Clean Core, ABAP OO, SAP Fiori und RAP/CAP sind für dich keine Fremdwörter.Grundkenntnisse im SAP Inkasso/Exkasso (FI-CA/FS-CD) sind ein Plus."
+      ]
+    },
+    {
+      "id": "R06",
+      "title": "SAP HR applications",
+      "fragments": [
+        "Kenntnisse im SAP-HCM-UmfeldErfahrung mit ABAP/ABAP OO, Web Dynpro ABAP oder SAP UI5 von VorteilFreude an der Zusammenarbeit mit unterschiedlichen Anspruchsgruppen"
+      ]
+    },
+    {
+      "id": "R07",
+      "title": ".NET development",
+      "fragments": [
+        "Mehrjährige praktische Erfahrung in der Entwicklung von Applikationen mit C#, .NET Core, SQL-Server, T-SQL, Entity Framework Core, Webtechnologien (JavaScript, HTML, CSS) und REST-Schnittstellen"
+      ]
+    },
+    {
+      "id": "R08",
+      "title": "Robot optimization",
+      "fragments": [
+        "Zeitplanungs- und Optimierungsalgorithmen in .NET/C# und Python für unsere Laborrobotik-Plattform.In dieser Rolle evaluierst und implementierst du Optimierungs- und Heuristikverfahren"
+      ]
+    },
+    {
+      "id": "R09",
+      "title": "HR advisory",
+      "fragments": [
+        "Unterstützung und Beratung der Linienvorgesetzten sowie die Teilnahme an Bewerbungsgesprächen im jeweiligen Zuständigkeitsbereich"
+      ]
+    },
+    {
+      "id": "R10",
+      "title": "Recruitment consulting",
+      "fragments": [
+        "Heute führst du Bewerbungsgespräche, morgen besuchst du Kunden vor Ort und übermorgen versuchst du gleichzeitig fünf offene Stellen zu besetzen, während dein Telefon im Dauerbetrieb läuft."
+      ]
+    },
+    {
+      "id": "R11",
+      "title": "Dementia nursing",
+      "fragments": [
+        "eine engagierte und kompetente Pflegefachperson HF mit Interesse am Schwerpunkt Demenz.",
+        "Raum für Eigeninitiative und einem wertschätzenden, unterstützenden Team ? ganz ohne Nachtdienste."
+      ]
+    },
+    {
+      "id": "R12",
+      "title": "Adolescent nursing",
+      "fragments": [
+        "Dipl. Pflegefachfrau / Pflegefachmann als Fachexpertin / Fachexperte, Therapiestation Jugendliche",
+        "Bereitschaft für Schicht- und Wochenenddienste (ohne Nachtdienste)"
+      ]
+    },
+    {
+      "id": "R13",
+      "title": "Night nursing",
+      "fragments": [
+        "Viel Leidenschaft und Engagement für Ihre Aufgabe im NachtdienstEine gute Portion Humor, um auch herausfordernde Situationen zu meistern"
+      ]
+    },
+    {
+      "id": "R14",
+      "title": "Hospital nursing",
+      "fragments": [
+        "Ganzheitliche Pflege und Betreuung unserer Patientinnen und Patienten sowie deren AngehörigenÜbernahme von medizinaltechnischen Verrichtungen (Blutentnahme, Verbandwechsel, Richten von Medikamenten)"
+      ]
+    },
+    {
+      "id": "R15",
+      "title": "Accounts processing",
+      "fragments": [
+        "Mehrjährige Berufserfahrung in der Kreditoren- und Debitorenbuchhaltung oder im Finanz- und Rechnungswesen. Erfahrung im Zahlungsverkehr, in der Verbuchung von Zahlungseingängen"
+      ]
+    },
+    {
+      "id": "R16",
+      "title": "Trust accounting",
+      "fragments": [
+        "Selbständige Führung von Kundenbuchhaltungen für diverse Gesellschaften inkl. NebenbücherErstellen/Vorbereiten von AbschlüssenErstellen von Steuererklärungen juristische und natürliche Personen"
+      ]
+    },
+    {
+      "id": "R17",
+      "title": "Warehouse operations",
+      "fragments": [
+        "Sachgemässe KommissionierungAufträge transportfähig verdichten für eine hohe Auslastung der FahrzeugeRetouren bearbeiten und einlagernWareneingang / -Ausgangskontrolle"
+      ]
+    },
+    {
+      "id": "R18",
+      "title": "Order picking",
+      "fragments": [
+        "Kommissionierung der Waren mittels Datenfunkterminal (Pick-by-Voice)Mithilfe bei der Entladung von LKWsSortierung und Einlagerung von Warenretouren und Rollcontainern"
+      ]
+    },
+    {
+      "id": "R19",
+      "title": "Electrical maintenance",
+      "fragments": [
+        "Du behebst kompetent MSR-Störungen sowie Mängel an elektrischen Infrastruktureinrichtungen (z. B. Beleuchtung, Elektroinstallationen)."
+      ]
+    },
+    {
+      "id": "R20",
+      "title": "Assembly and testing",
+      "fragments": [
+        "Vormontage von elektrischen und mechanischen BaugruppenTesten und Validieren von neuen BaugruppenDurchführung von Qualitäts-, Stichprobenprüfungen und Fehleranalysen"
+      ]
+    },
+    {
+      "id": "R21",
+      "title": "Restaurant service",
+      "source_sha256": "6c63e423c87882720898317bdb651fc2d1d262752c9276cee1484df265da9267",
+      "fragments": [
+        "Gäste werden aufmerksam betreut, kompetent beraten und aktiv durch das neue Food und Beverage Angebot geführt. Eine eigene Servicestation wird selbständig geführt, inklusive Inkasso und Nachbereitung."
+      ]
+    },
+    {
+      "id": "R22",
+      "title": "Guest service",
+      "fragments": [
+        "Fachgerechte und professionelle Gästebetreuung",
+        "Fachkundige Führung einer Station mit InkassoBereitstellung der erforderlichen Mise-en-placeEinhaltung der Hygiene- und Sauberkeitsrichtlinie"
+      ]
+    },
+    {
+      "id": "R23",
+      "title": "Retail operations",
+      "source_sha256": "6ca8fefe4d307da440127ee6cd45f17c7beef124bb3378e557ae3fc361a498fd",
+      "fragments": [
+        "Dank deinem aktiven Einsatz verkaufen sich die Waren besser und werden top bewirtschaftet.Klar, dass du unsere Vorgaben einhältst, sei es bei Frische und Qualität, punkto Hygiene, Temperaturvorschriften oder des Verfalldatums."
+      ]
+    },
+    {
+      "id": "R24",
+      "title": "Retail team lead",
+      "fragments": [
+        "Dass die Verkaufsstelle Lust macht zum Einkaufen und die Regale immer gefüllt sind, dafür sorgen Sie tagtäglich.Sie führen Ihr Team und erstellen die Personaleinsatzplanung."
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "id": "D01",
+      "split": "development",
+      "kind": "maintenance",
+      "text": "Störungen an elektrischen Anlagen beheben",
+      "relevant": ["R19"],
+      "criterion": "The excerpt explicitly describes diagnosing or correcting electrical infrastructure faults. Assembly and testing alone do not satisfy this need."
+    },
+    {
+      "id": "D02",
+      "split": "development",
+      "kind": "retail",
+      "text": "Waren im Laden verkaufen und Regale bewirtschaften",
+      "relevant": ["R23", "R24"],
+      "criterion": "The excerpt describes operating a retail sales floor, selling goods or keeping retail shelves stocked. Warehouse picking and restaurant service are different tasks."
+    },
+    {
+      "id": "D03",
+      "split": "development",
+      "kind": "hospitality",
+      "text": "Gäste bedienen und eine Servicestation mit Inkasso führen",
+      "relevant": ["R21", "R22"],
+      "criterion": "The excerpt explicitly describes hospitality guest service and running a service station with payment collection."
+    },
+    {
+      "id": "D04",
+      "split": "development",
+      "kind": "assembly",
+      "text": "Elektrische und mechanische Baugruppen montieren und testen",
+      "relevant": ["R20"],
+      "criterion": "The excerpt describes assembly and testing of electrical or mechanical subassemblies, not merely repairing electrical infrastructure."
+    },
+    {
+      "id": "T01",
+      "split": "test",
+      "kind": "exact BI skills",
+      "text": "Power BI DAX",
+      "relevant": ["R03", "R04"],
+      "criterion": "The excerpt explicitly names both Power BI and DAX as skills. Generic reporting or data pipelines without those stated skills are insufficient."
+    },
+    {
+      "id": "T02",
+      "split": "test",
+      "kind": "exact SAP skills",
+      "text": "SAP ABAP",
+      "relevant": ["R05", "R06"],
+      "criterion": "The excerpt explicitly names SAP and ABAP or ABAP OO as technical knowledge."
+    },
+    {
+      "id": "T03",
+      "split": "test",
+      "kind": "job-title search",
+      "text": "data engineer",
+      "relevant": ["R01", "R02"],
+      "criterion": "For this job-title query, the draft definition of data-engineering work requires evidence of building, developing or operating data pipelines, ETL or ELT for analytics. Querying an existing warehouse without pipeline development is insufficient. An exact job-title match is not required, and anonymized display titles are not indexed."
+    },
+    {
+      "id": "T04",
+      "split": "test",
+      "kind": "warehouse work",
+      "text": "Waren kommissionieren und Retouren einlagern",
+      "relevant": ["R17", "R18"],
+      "criterion": "The excerpt explicitly describes picking goods and putting returns into warehouse storage. Retail shelf management is not enough."
+    },
+    {
+      "id": "T05",
+      "split": "test",
+      "kind": "accounting",
+      "text": "Buchhaltung führen und Zahlungen oder Abschlüsse bearbeiten",
+      "relevant": ["R15", "R16"],
+      "criterion": "The excerpt explicitly describes bookkeeping or accounting together with payments or preparation of financial statements. Restaurant payment collection alone is not bookkeeping."
+    },
+    {
+      "id": "T06",
+      "split": "test",
+      "kind": "cross-language recruitment",
+      "text": "coordinate hiring interviews and find suitable applicants",
+      "relevant": ["R09", "R10"],
+      "criterion": "The excerpt describes participating in recruitment interviews or filling vacancies as part of the role. Instructions for applying to an unrelated job do not count. This criterion does not require the exact English query words."
+    },
+    {
+      "id": "T07",
+      "split": "test",
+      "kind": "exact programming identifiers",
+      "text": "C# .NET",
+      "relevant": ["R07", "R08"],
+      "criterion": "The excerpt explicitly names both C# and .NET for application development or algorithm implementation."
+    },
+    {
+      "id": "T08",
+      "split": "test",
+      "kind": "negated shift constraint",
+      "text": "Pflege ohne Nachtdienste",
+      "relevant": ["R11", "R12"],
+      "criterion": "The excerpt establishes a nursing role and explicitly excludes night shifts. Night work is a negative; an unspecified shift pattern is not established as satisfying this requirement."
+    }
+  ]
+}

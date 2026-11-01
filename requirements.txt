@@ -8,3 +8,4 @@ scipy>=1.10
 statsmodels>=0.14
 tensorflow>=2.15
 -r 08_Neural_Networks/HS2026/requirements-transfer-learning-pytorch.txt
+-r 09_NLP_Transformers/HS2026/requirements-nlp.txt

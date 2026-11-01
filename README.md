@@ -11,6 +11,7 @@ Welcome to the **Machine Learning Basics Course**! This course is designed to pr
 5. [Modules](#modules)
 6. [Neural Networks](#neural-networks)
 7. [Data](#data)
+8. [NLP and Transformers](#nlp-and-transformers)
 
 ## Introduction
 
@@ -20,7 +21,7 @@ The modules cover supervised and unsupervised learning. Neural networks are cove
 
 ## Course Structure
 
-Modules 01–07 and HS2026 Neural Networks Lectures 1-4 use the same three-notebook structure:
+Modules 01–07, HS2026 Neural Networks Lectures 1-4 and HS2026 NLP Lectures 1-4 use the same three-notebook structure:
 
 - `<topic>_concept.ipynb`: the idea in plain language, the most important formulas, a small worked example and provided demonstration code.
 - `<topic>_exercise.ipynb`: guided practice with one data set. Data preparation and plots are provided; fill a few marked code gaps and interpret the results.
@@ -124,6 +125,24 @@ These accompany the transfer-learning example in SW07 Lecture 4. This is supervi
 - **Mathematical Foundations:** Li, H. (2023). Machine Learning Methods. Springer Nature.
 - **In scikit-learn:** https://scikit-learn.org/stable/modules/neural_networks_supervised.html
 
+## NLP and Transformers
+
+[HS2026 NLP Lectures 1-4](09_NLP_Transformers/HS2026/README.md) follow the same
+concept/exercise/solution structure:
+
+- Lecture 1: text representations, a small word2vec trainer and job-category classification.
+- Lecture 2: self-attention, frozen BERT features, category classification and next-token prediction.
+- Lecture 3: multilingual E5 search, BM25, rank fusion and top-K evaluation.
+- Lecture 4: simulated featured-ad feedback, epsilon-greedy, sequential decisions and an RLHF outlook.
+
+The new classification data are explicitly synthetic. Retrieval uses only approved
+short excerpts with provisional judgments. Both data files are in `00_Data`; no private
+full-ad collection is required or copied. Read the [data notes](00_Data/nlp_data_readme.md)
+before redistribution. First use of BERT/E5 downloads public weights; text is processed
+locally. The root requirements include the NLP dependencies for Python 3.11 Codespaces.
+Choose one short worked step for a lecture demonstration; the full exercises are
+separate practical work.
+
 ## Data
 
 The tabular data sets and Fashion-MNIST images are stored in the folder [00_Data](00_Data/), so no Kaggle account or dataset download is needed for those examples. Lecture 3's separate MNIST digits dataset is downloaded by its NumPy reader on first use and cached after checksum verification. The script
@@ -168,4 +187,4 @@ python 00_Data/prepare_data.py --email-source /path/to/email_data.csv
 
 This command does not download or regenerate the other datasets. It requires the local helpers beside the HS2026 notebook. Keep the original raw corpus outside this repository: the exported CSV omits email subjects, bodies, addresses and local filesystem paths. Counts and hashed message identifiers reduce text exposure but do not constitute a guarantee of anonymization. The source publisher's upstream rights and labels have not been independently audited; verify applicable permissions before redistribution.
 
-The optional pretrained-text extension cannot run from the feature-only CSV or reconstruct its original text. Set `RAW_EMAIL_PATH` in its first code cell to an authorized private copy of the original raw CSV. Before loading the encoder, the notebook checks that message identifiers, labels and source-row numbers reproduce every reference split. XGBoost and the sentence-transformer extension need additional packages beyond the base requirements; they are not required to inspect the included data.
+The optional pretrained-text extension cannot run from the feature-only CSV or reconstruct its original text. Set `RAW_EMAIL_PATH` in its first code cell to an authorized private copy of the original raw CSV. Before loading the encoder, the notebook checks that message identifiers, labels and source-row numbers reproduce every reference split. The root requirements now include Sentence Transformers for the NLP module; XGBoost remains an optional additional package. Neither extension is required to inspect the included data.

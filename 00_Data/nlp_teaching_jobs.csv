@@ -1,0 +1,121 @@
+ad_id,creation_date,text,category,split
+S001,2026-07-01,Du betreibst ETL-Prozesse. Du arbeitest mit Airflow und dbt. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,train
+S002,2026-07-01,Du entwickelst Webanwendungen. Du arbeitest mit Java und Spring. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,train
+S003,2026-07-01,Du bearbeitest Reklamationen. Du arbeitest mit Telefon und E-Mail. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,train
+S004,2026-07-01,Du prüfst Rechnungen. Du arbeitest mit Excel und SAP. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,train
+S005,2026-07-02,Du prüfst die Qualität unserer Analysedaten. Du arbeitest mit Python und SQL. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,train
+S006,2026-07-02,Du entwickelst Webanwendungen. Du arbeitest mit Git und Docker. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,train
+S007,2026-07-02,Du beantwortest Kundenanfragen. Du arbeitest mit unser CRM-System. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,train
+S008,2026-07-02,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Excel und SAP. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,train
+S009,2026-07-03,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Airflow und dbt. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,train
+S010,2026-07-03,Du wartest unsere Anwendungen. Du arbeitest mit C# und .NET. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,train
+S011,2026-07-03,Du bearbeitest Reklamationen. Du arbeitest mit unser CRM-System. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,train
+S012,2026-07-03,Du erstellst Monatsabschlüsse. Du arbeitest mit Kontenabstimmung und SAP. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,train
+S013,2026-07-04,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Python und SQL. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,train
+S014,2026-07-04,Du wartest unsere Anwendungen. Du arbeitest mit Git und Docker. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,train
+S015,2026-07-04,Du unterstützt Kunden am Telefon. Du arbeitest mit unser Ticketsystem. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,train
+S016,2026-07-04,Du führst die Buchhaltung. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,train
+S017,2026-07-05,Du bindest neue Datenquellen an. Du arbeitest mit Python und SQL. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,train
+S018,2026-07-05,Du wartest unsere Anwendungen. Du arbeitest mit JavaScript und HTML. Du unterstützt die Webplattform und arbeitest eng im Team.,Software development,train
+S019,2026-07-05,Du bearbeitest Reklamationen. Du arbeitest mit Telefon und E-Mail. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,train
+S020,2026-07-05,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,train
+S021,2026-07-06,Du bindest neue Datenquellen an. Du arbeitest mit Spark und Python. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,train
+S022,2026-07-06,Du entwickelst Webanwendungen. Du arbeitest mit Java und Spring. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,train
+S023,2026-07-06,Du bearbeitest Reklamationen. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt unser Kontaktzentrum und arbeitest eng im Team.,Customer service,train
+S024,2026-07-06,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Excel und SAP. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,train
+S025,2026-07-07,Du betreibst ETL-Prozesse. Du arbeitest mit Spark und Python. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,train
+S026,2026-07-07,Du entwickelst Webanwendungen. Du arbeitest mit JavaScript und HTML. Du unterstützt die Webplattform und arbeitest eng im Team.,Software development,train
+S027,2026-07-07,Du bearbeitest Reklamationen. Du arbeitest mit unser Ticketsystem. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,train
+S028,2026-07-07,Du prüfst Rechnungen. Du arbeitest mit unser ERP-System. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,train
+S029,2026-07-08,Du bindest neue Datenquellen an. Du arbeitest mit Python und SQL. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,train
+S030,2026-07-08,Du entwickelst Webanwendungen. Du arbeitest mit C# und .NET. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,train
+S031,2026-07-08,Du berätst unsere Kunden. Du arbeitest mit unser CRM-System. Du unterstützt unser Kontaktzentrum und arbeitest eng im Team.,Customer service,train
+S032,2026-07-08,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit unser ERP-System. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,train
+S033,2026-07-09,Du betreibst ETL-Prozesse. Du arbeitest mit Spark und Python. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,train
+S034,2026-07-09,Du wartest unsere Anwendungen. Du arbeitest mit C# und .NET. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,train
+S035,2026-07-09,Du beantwortest Kundenanfragen. Du arbeitest mit unser CRM-System. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,train
+S036,2026-07-09,Du erstellst Monatsabschlüsse. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,train
+S037,2026-07-10,Du prüfst die Qualität unserer Analysedaten. Du arbeitest mit Airflow und dbt. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,train
+S038,2026-07-10,Du testest unsere Software. Du arbeitest mit Java und Spring. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,train
+S039,2026-07-10,Du unterstützt Kunden am Telefon. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,train
+S040,2026-07-10,Du erstellst Monatsabschlüsse. Du arbeitest mit Excel und SAP. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,train
+S041,2026-07-11,Du prüfst die Qualität unserer Analysedaten. Du arbeitest mit Spark und Python. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,train
+S042,2026-07-11,Du wartest unsere Anwendungen. Du arbeitest mit Java und Spring. Du unterstützt die Webplattform und arbeitest eng im Team.,Software development,train
+S043,2026-07-11,Du unterstützt Kunden am Telefon. Du arbeitest mit Telefon und E-Mail. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,train
+S044,2026-07-11,Du prüfst Rechnungen. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,train
+S045,2026-07-12,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Python und SQL. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,train
+S046,2026-07-12,Du implementierst neue REST-Schnittstellen. Du arbeitest mit Java und Spring. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,train
+S047,2026-07-12,Du beantwortest Kundenanfragen. Du arbeitest mit Telefon und E-Mail. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,train
+S048,2026-07-12,Du führst die Buchhaltung. Du arbeitest mit Kontenabstimmung und SAP. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,train
+S049,2026-07-13,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Python und SQL. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,train
+S050,2026-07-13,Du wartest unsere Anwendungen. Du arbeitest mit Git und Docker. Du unterstützt die Webplattform und arbeitest eng im Team.,Software development,train
+S051,2026-07-13,Du beantwortest Kundenanfragen. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,train
+S052,2026-07-13,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,train
+S053,2026-07-14,Du bindest neue Datenquellen an. Du arbeitest mit BigQuery und SQL. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,train
+S054,2026-07-14,Du entwickelst Webanwendungen. Du arbeitest mit JavaScript und HTML. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,train
+S055,2026-07-14,Du bearbeitest Reklamationen. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,train
+S056,2026-07-14,Du führst die Buchhaltung. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,train
+S057,2026-07-15,Du bindest neue Datenquellen an. Du arbeitest mit Airflow und dbt. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,train
+S058,2026-07-15,Du wartest unsere Anwendungen. Du arbeitest mit JavaScript und HTML. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,train
+S059,2026-07-15,Du beantwortest Kundenanfragen. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt unser Kontaktzentrum und arbeitest eng im Team.,Customer service,train
+S060,2026-07-15,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Kontenabstimmung und SAP. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,train
+S061,2026-07-16,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Airflow und dbt. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,train
+S062,2026-07-16,Du implementierst neue REST-Schnittstellen. Du arbeitest mit Git und Docker. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,train
+S063,2026-07-16,Du bearbeitest Reklamationen. Du arbeitest mit unser CRM-System. Du unterstützt unser Kontaktzentrum und arbeitest eng im Team.,Customer service,train
+S064,2026-07-16,Du erstellst Monatsabschlüsse. Du arbeitest mit unser ERP-System. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,train
+S065,2026-07-17,Du prüfst die Qualität unserer Analysedaten. Du arbeitest mit BigQuery und SQL. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,train
+S066,2026-07-17,Du entwickelst Webanwendungen. Du arbeitest mit C# und .NET. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,train
+S067,2026-07-17,Du berätst unsere Kunden. Du arbeitest mit Telefon und E-Mail. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,train
+S068,2026-07-17,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,train
+S069,2026-07-18,Du betreibst ETL-Prozesse. Du arbeitest mit Airflow und dbt. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,train
+S070,2026-07-18,Du implementierst neue REST-Schnittstellen. Du arbeitest mit JavaScript und HTML. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,train
+S071,2026-07-18,Du berätst unsere Kunden. Du arbeitest mit Telefon und E-Mail. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,train
+S072,2026-07-18,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit unser ERP-System. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,train
+S073,2026-07-19,Du bindest neue Datenquellen an. Du arbeitest mit Python und SQL. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,validation
+S074,2026-07-19,Du implementierst neue REST-Schnittstellen. Du arbeitest mit C# und .NET. Du unterstützt die Webplattform und arbeitest eng im Team.,Software development,validation
+S075,2026-07-19,Du beantwortest Kundenanfragen. Du arbeitest mit Telefon und E-Mail. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,validation
+S076,2026-07-19,Du erstellst Monatsabschlüsse. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,validation
+S077,2026-07-20,Du betreibst ETL-Prozesse. Du arbeitest mit Airflow und dbt. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,validation
+S078,2026-07-20,Du wartest unsere Anwendungen. Du arbeitest mit Git und Docker. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,validation
+S079,2026-07-20,Du berätst unsere Kunden. Du arbeitest mit unser Ticketsystem. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,validation
+S080,2026-07-20,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit unser ERP-System. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,validation
+S081,2026-07-21,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Airflow und dbt. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,validation
+S082,2026-07-21,Du implementierst neue REST-Schnittstellen. Du arbeitest mit JavaScript und HTML. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,validation
+S083,2026-07-21,Du beantwortest Kundenanfragen. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,validation
+S084,2026-07-21,Du führst die Buchhaltung. Du arbeitest mit unser ERP-System. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,validation
+S085,2026-07-22,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Spark und Python. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,validation
+S086,2026-07-22,Du testest unsere Software. Du arbeitest mit Java und Spring. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,validation
+S087,2026-07-22,Du berätst unsere Kunden. Du arbeitest mit Telefon und E-Mail. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,validation
+S088,2026-07-22,Du führst die Buchhaltung. Du arbeitest mit Kontenabstimmung und SAP. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,validation
+S089,2026-07-23,Du prüfst die Qualität unserer Analysedaten. Du arbeitest mit BigQuery und SQL. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,validation
+S090,2026-07-23,Du implementierst neue REST-Schnittstellen. Du arbeitest mit Git und Docker. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,validation
+S091,2026-07-23,Du unterstützt Kunden am Telefon. Du arbeitest mit Telefon und E-Mail. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,validation
+S092,2026-07-23,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Kontenabstimmung und SAP. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,validation
+S093,2026-07-24,Du bindest neue Datenquellen an. Du arbeitest mit BigQuery und SQL. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,validation
+S094,2026-07-24,Du implementierst neue REST-Schnittstellen. Du arbeitest mit C# und .NET. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,validation
+S095,2026-07-24,Du bearbeitest Reklamationen. Du arbeitest mit unser CRM-System. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,validation
+S096,2026-07-24,Du führst die Buchhaltung. Du arbeitest mit Excel und SAP. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,validation
+S097,2026-07-25,Du bindest neue Datenquellen an. Du arbeitest mit Spark und Python. Du unterstützt die Datenplattform und arbeitest eng im Team.,Data engineering,test
+S098,2026-07-25,Du entwickelst Webanwendungen. Du arbeitest mit Git und Docker. Du unterstützt unser Produkt und arbeitest eng im Team.,Software development,test
+S099,2026-07-25,Du berätst unsere Kunden. Du arbeitest mit Gesprächsführung und Beratung. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,test
+S100,2026-07-25,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Finanzbuchhaltung und Excel. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,test
+S101,2026-07-26,Du betreibst ETL-Prozesse. Du arbeitest mit BigQuery und SQL. Du unterstützt unsere Reportings und arbeitest eng im Team.,Data engineering,test
+S102,2026-07-26,Du testest unsere Software. Du arbeitest mit C# und .NET. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,test
+S103,2026-07-26,Du unterstützt Kunden am Telefon. Du arbeitest mit Telefon und E-Mail. Du unterstützt unser Kontaktzentrum und arbeitest eng im Team.,Customer service,test
+S104,2026-07-26,Du prüfst Rechnungen. Du arbeitest mit Excel und SAP. Du unterstützt unsere Buchhaltung und arbeitest eng im Team.,Accounting,test
+S105,2026-07-27,Du entwickelst automatisierte Datenpipelines. Du arbeitest mit Spark und Python. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,test
+S106,2026-07-27,Du testest unsere Software. Du arbeitest mit JavaScript und HTML. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,test
+S107,2026-07-27,Du beantwortest Kundenanfragen. Du arbeitest mit unser CRM-System. Du unterstützt unser Kontaktzentrum und arbeitest eng im Team.,Customer service,test
+S108,2026-07-27,Du führst die Buchhaltung. Du arbeitest mit unser ERP-System. Du unterstützt das Rechnungswesen und arbeitest eng im Team.,Accounting,test
+S109,2026-07-28,Du betreibst ETL-Prozesse. Du arbeitest mit Airflow und dbt. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,test
+S110,2026-07-28,Du implementierst neue REST-Schnittstellen. Du arbeitest mit Java und Spring. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,test
+S111,2026-07-28,Du beantwortest Kundenanfragen. Du arbeitest mit unser CRM-System. Du unterstützt unsere Kundenbetreuung und arbeitest eng im Team.,Customer service,test
+S112,2026-07-28,Du prüfst Rechnungen. Du arbeitest mit unser ERP-System. Du unterstützt den Jahresabschluss und arbeitest eng im Team.,Accounting,test
+S113,2026-07-29,Du prüfst die Qualität unserer Analysedaten. Du arbeitest mit Python und SQL. Du unterstützt das Data Warehouse und arbeitest eng im Team.,Data engineering,test
+S114,2026-07-29,Du entwickelst Webanwendungen. Du arbeitest mit JavaScript und HTML. Du unterstützt unsere mobilen Anwendungen und arbeitest eng im Team.,Software development,test
+S115,2026-07-29,Du unterstützt Kunden am Telefon. Du arbeitest mit unser Ticketsystem. Du unterstützt unser Service-Team und arbeitest eng im Team.,Customer service,test
+S116,2026-07-29,Du bearbeitest Kreditoren und Debitoren. Du arbeitest mit Kontenabstimmung und SAP. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,test
+S117,2026-07-30,Du betreibst ETL-Prozesse. Du arbeitest mit BigQuery und SQL. Du unterstützt unsere Analysen und arbeitest eng im Team.,Data engineering,test
+S118,2026-07-30,Du wartest unsere Anwendungen. Du arbeitest mit Git und Docker. Du unterstützt unser Kundenportal und arbeitest eng im Team.,Software development,test
+S119,2026-07-30,Du bearbeitest Reklamationen. Du arbeitest mit unser Ticketsystem. Du unterstützt den Kundendienst und arbeitest eng im Team.,Customer service,test
+S120,2026-07-30,Du erstellst Monatsabschlüsse. Du arbeitest mit Excel und SAP. Du unterstützt unsere Finanzabteilung und arbeitest eng im Team.,Accounting,test
