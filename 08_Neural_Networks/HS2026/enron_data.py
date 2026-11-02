@@ -90,7 +90,10 @@ def load_email_splits(source_path, max_messages=30_000, seed=7):
         if (not pd.api.types.is_integer_dtype(source_rows)
                 or not source_rows.ge(0).all() or not source_rows.is_unique):
             raise ValueError('Prepared email text needs unique, nonnegative integer source rows.')
-        normalized = (emails['subject'].fillna('') + '\n' + emails['body'].fillna('')).str.replace(r'\s+', ' ', regex=True).str.strip().str.casefold()
+        content = emails['subject'].fillna('') + '\n' + emails['body'].fillna('')
+        # Match the prepared keys without pandas-backend-dependent whitespace rules.
+        normalized = content.map(
+            lambda text: re.sub(r'[ \t\n\r\f]+', ' ', text).strip().casefold())
         keys = normalized.map(lambda content: hashlib.sha256(content.encode('utf-8')).hexdigest())
         if normalized.eq('').any() or not keys.is_unique or not keys.eq(raw['message_key']).all():
             raise ValueError('Prepared email text contains empty, duplicate or mismatched message content.')

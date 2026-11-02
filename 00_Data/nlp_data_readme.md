@@ -43,6 +43,14 @@ loader verifies the stored keys and preserves these partitions rather than
 resampling. Changing the seed does not resplit this prepared text file.
 Do not lower `MAX_MESSAGES` below 30,000 for this fixed dataset.
 
+For these prepared keys, normalization collapses ASCII spaces, tabs, line feeds,
+carriage returns and form feeds, strips surrounding whitespace, then applies
+case folding. Other whitespace inside a message is preserved. The loader uses
+explicit Python rules so pandas' Python and Arrow string backends agree.
+This only affects the integrity check, not the decoded text used for training.
+If an older loader rejects the supplied file with a content-mismatch error,
+pull the updated loader and restart the notebook kernel before rerunning.
+
 The separate `email_spam.csv` contains only numerical features and has its own
 reference identifiers. It remains unchanged; do not assume its source-row
 identifiers and message keys are interchangeable with this word2vec subset.
