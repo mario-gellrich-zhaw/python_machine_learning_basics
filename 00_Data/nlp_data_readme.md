@@ -75,6 +75,58 @@ Do not present its metrics as real business evidence.
 No employer details, original ad IDs or private descriptions are included.
 The generator uses seed 7; the CSV is supplied so students need not regenerate it.
 
+## Real job-category classification cohort
+
+`nlp_real_job_categories.csv.gz` supplies the exact real-data cohort behind
+page 37 of `Slides_MSC_Data_Science_Week_08_EN.pdf`. Lecture 2's BERT notebooks
+use this file instead of the synthetic examples. The source is the local
+`job_ads_2026_q3_redacted_sample_30000.parquet` used by the lecture's
+`prepare_demo.py`, not the Kaggle LinkedIn dataset. No external source licence
+is inferred.
+
+On 2026-11-02, the instructor confirmed permission to include this exact
+classification subset in this GitHub repository for its intended audience.
+That confirmation is not an independently audited licence for unrestricted
+reuse. Descriptions were redacted upstream and cleaned by the lecture pipeline;
+redaction does not guarantee anonymity. Review the intended distribution scope
+before further redistribution.
+
+The original 30,000-ad sample contains 5,353 ads with exactly one `JOBS:`
+category. The existing lecture preparation excludes 64 rows with conflicting
+labels for identical case-insensitive cleaned descriptions and 278 later exact
+duplicates. The export contains the remaining **5,011 descriptions and 143
+categories**, in the original chronological order. It retains the full cleaned
+description used as input by the lecture, not just the first 126 word pieces.
+The notebook applies that input cap consistently to BERT and TF-IDF.
+
+| Partition | Dates in 2026 | Ads | Categories | Ads with category absent from training |
+|---|---|---:|---:|---:|
+| Train | 1 July-31 August | 3,328 | 139 | 0 |
+| Validation | 1-14 September | 918 | 118 | 3 |
+| Test | 15-28 September | 765 | 114 | 2 |
+
+Columns:
+
+- `teaching_id`: sequential teaching reference, not the original ad identifier.
+- `creation_date`: original date used for partitioning, not a model feature.
+- `text`: cleaned, redacted real description; case is preserved.
+- `category`: the single original `JOBS:` label, with the prefix removed.
+- `split`: fixed `train`, `validation` or `test` membership.
+
+The export preserves the exact prepared text, labels and within-partition order;
+the original ad IDs and unrelated metadata are not included. Do not resample or
+drop later unseen categories to improve the scores. The original source Parquet
+and other ads remain outside this repository.
+
+This cohort was already inspected while developing the lectures. Its global
+duplicate/conflict audit is retrospective; templates and near-duplicates can
+remain. It is not a pristine research holdout or evidence of deployment value.
+The notebooks match the lecture recipe: frozen multilingual cased BERT,
+128-token cap, mean pooling without special/padding tokens, train-only TF-IDF,
+balanced logistic regression and validation-selected regularization. Macro-F1
+averages labels present in the evaluated split; all ads count for accuracy and
+top-3 hit rate. Different package versions can change numerical results.
+
 ## Approved search excerpts
 
 `nlp_search_benchmark.json` is copied from the existing Lecture 3 benchmark.
@@ -91,5 +143,6 @@ holdout performance. Missing excerpt evidence does not prove whole-ad irrelevanc
 Teaching permission for these short excerpts does not establish an unrestricted
 public-data licence. Confirm the intended distribution permissions before making
 a public fork or redistributing this data. No licence from the unrelated Kaggle
-dataset is assumed. Do not add the full private Parquet file or additional
-unapproved raw email data.
+dataset is assumed. The classification subset above has separate confirmed
+permission; it does not extend the search-excerpt permission to the full private
+Parquet file. Do not add other unapproved job or raw email data.

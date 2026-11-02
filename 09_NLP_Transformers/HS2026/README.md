@@ -86,26 +86,37 @@ roughly 700 MB multilingual model. Models are used sequentially on CPU.
 
 ## Data and interpretation
 
-- [nlp_teaching_jobs.csv](../../00_Data/nlp_teaching_jobs.csv) contains original
+- [nlp_teaching_jobs.csv](../../../00_Data/nlp_teaching_jobs.csv) contains original
   synthetic job advertisements with dates, four categories and fixed chronological
-  training/validation/test membership. These are small teaching examples, not
+  training/validation/test membership for Lecture 1. These are small teaching examples, not
   the real collection or evidence of deployment performance.
-- [nlp_search_benchmark.json](../../00_Data/nlp_search_benchmark.json) preserves
+- [nlp_real_job_categories.csv.gz](../../../00_Data/nlp_real_job_categories.csv.gz)
+  supplies Lecture 2's exact real-data cohort from Week 08, page 37: 5,011 cleaned,
+  redacted descriptions across 143 categories, split into 3,328 training, 918
+  validation and 765 test ads by date. Later unseen categories remain in evaluation.
+  The notebooks compare frequency, TF-IDF and frozen multilingual BERT using the
+  lecture recipe and report accuracy, macro-F1 and top-3 hit rate. Full CPU encoding
+  is practical work; prepare the solution outputs before a short lecture demo.
+  The instructor confirmed permission for this subset and repository audience,
+  not unrestricted reuse of the full source collection.
+- [nlp_search_benchmark.json](../../../00_Data/nlp_search_benchmark.json) preserves
   the 24 approved, short German job-ad excerpts, anonymized labels and draft
   query judgments from the existing NLP lecture. Only fragments are indexed.
   Judgments need instructor review. The revised query panel is not untouched
   holdout evaluation, and recall applies only to the 24 excerpts.
 - Bandit clicks use invented 8%/12% probabilities. There are no real user logs.
-- [email_spam_text.csv.gz](../../00_Data/email_spam_text.csv.gz) supplies the
+- [email_spam_text.csv.gz](../../../00_Data/email_spam_text.csv.gz) supplies the
   selected original email texts for word2vec training. Preserve its partitions
   and row order; fit word2vec only on its training text. See its distribution
   and privacy notes before reuse.
 
-See the [data notes](../../00_Data/nlp_data_readme.md). The private 30,000-ad
+See the [data notes](../../../00_Data/nlp_data_readme.md). The private 30,000-ad
 Parquet file and the full original email corpus are not copied into this repository.
-Only the authorised 30,000-email text subset is included for this activity.
-The synthetic exercises do not reproduce the numerical results from the
-real-data slides. The word-map activity uses page 17 as an illustration and
+Only the authorised classification and email subsets described above are included.
+Lecture 1's synthetic job exercise does not reproduce real-data slide metrics.
+Lecture 2 now uses the original real classification cohort and recipe; report
+the results of your actual run rather than assume identical numbers across
+package versions. The word-map activity uses page 17 as an illustration and
 encourages students to explore other words rather than copy a fixed result.
 
 ## Reused lecture material

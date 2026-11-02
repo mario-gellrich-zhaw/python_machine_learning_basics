@@ -135,9 +135,15 @@ concept/exercise/solution structure:
 - Lecture 3: multilingual E5 search, BM25, rank fusion and top-K evaluation.
 - Lecture 4: simulated featured-ad feedback, epsilon-greedy, sequential decisions and an RLHF outlook.
 
-The new classification data are explicitly synthetic. Retrieval uses only approved
-short excerpts with provisional judgments. Both data files are in `00_Data`; no private
-full-ad collection is required or copied. Read the [data notes](00_Data/nlp_data_readme.md)
+Lecture 1's job-classification examples are synthetic. Lecture 2 uses the
+[5,011 real, cleaned, redacted job ads](00_Data/nlp_real_job_categories.csv.gz)
+behind Week 08 page 37, with the original chronological splits and category
+labels. It compares frequency, TF-IDF and frozen multilingual BERT using accuracy,
+macro-F1 and top-3 hit rate. The instructor confirmed distribution permission
+for this classification subset and repository audience.
+Retrieval still uses only approved short excerpts with provisional judgments.
+The source 30,000-ad Parquet file is not copied.
+Read the [data notes](00_Data/nlp_data_readme.md)
 before redistribution. First use of BERT/E5 downloads public weights; text is processed
 locally. The root requirements include the NLP dependencies for Python 3.11 Codespaces.
 Choose one short worked step for a lecture demonstration; the full exercises are
@@ -168,6 +174,7 @@ used in the notebooks; the original sources may change or become unavailable ove
 | `avalanche_accidents_switzerland.csv` | 4'188 avalanche accidents in Switzerland since 1970/71 (location, terrain, danger level, activity, persons caught, buried and killed) | WSL Institute for Snow and Avalanche Research SLF, [EnviDat](https://www.envidat.ch/dataset/avalanche-accidents-in-switzerland-since-1970-71); [SLF terms of use](https://www.slf.ch/en/services-and-products/data-and-monitoring/slf-data-service.html) |
 | [email_spam.csv](00_Data/email_spam.csv) | 30,000 emails represented by 16 numeric features, a ham/spam label and fixed train/validation/test membership; no raw email text | Derived from the local copy of [Spam email dataset (Enron, TREC and others)](https://www.kaggle.com/datasets/nikhilchaudhary7108/spam-email-datasetenron-trec-and-others) |
 | [email_spam_text.csv.gz](00_Data/email_spam_text.csv.gz) | Authorised 30,000-email text subset for the word2vec activity; original labels, fixed partitions and row order preserved | Same source collection; instructor-confirmed distribution scope and privacy notes in [nlp_data_readme.md](00_Data/nlp_data_readme.md) |
+| [nlp_real_job_categories.csv.gz](00_Data/nlp_real_job_categories.csv.gz) | Authorised 5,011-ad real classification cohort from Week 08 page 37; 143 categories and fixed chronological splits | Local redacted Q3 2026 lecture collection; provenance, instructor-confirmed distribution scope and limitations in [nlp_data_readme.md](00_Data/nlp_data_readme.md) |
 | [FashionMNIST/raw/](00_Data/FashionMNIST/raw/) | 60,000 official training images and 10,000 test images, each 28 x 28 grayscale pixels, with ten-category labels in four uncompressed IDX files | Zalando Research, [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) |
 
 ### Fashion-MNIST image data
