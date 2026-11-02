@@ -127,6 +127,18 @@ balanced logistic regression and validation-selected regularization. Macro-F1
 averages labels present in the evaluated split; all ads count for accuracy and
 top-3 hit rate. Different package versions can change numerical results.
 
+Lecture 3 also reuses all 5,011 descriptions as a static search collection.
+It combines these classification partitions for indexing, without training E5
+or using the category labels to rank results. This is not a future-period search
+evaluation, and the 24-excerpt relevance judgments below do not label this corpus.
+Inspect larger-collection results manually; do not score unjudged ads as irrelevant.
+BM25 indexes complete cleaned text; E5 encodes only the beginning up to its token
+limit (512 tokens for the pinned model, including its prefix and markers).
+Truncation counts are shown. Matching vector caches are stored locally in the
+Git-ignored `nlp-search-cache/` directory and rebuilt if data, model or settings
+change. Vectors are not guaranteed anonymous and should not be redistributed
+outside the confirmed data scope.
+
 ## Approved search excerpts
 
 `nlp_search_benchmark.json` is copied from the existing Lecture 3 benchmark.

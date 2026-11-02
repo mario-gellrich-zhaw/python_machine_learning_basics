@@ -104,6 +104,18 @@ roughly 700 MB multilingual model. Models are used sequentially on CPU.
   query judgments from the existing NLP lecture. Only fragments are indexed.
   Judgments need instructor review. The revised query panel is not untouched
   holdout evaluation, and recall applies only to the 24 excerpts.
+- Lecture 3's additional **Search the larger real-ad collection** section reuses
+  all 5,011 ads from Lecture 2 for interactive BM25, E5 and hybrid search.
+  Edit `user_query` and rerun its code cell to compare top-K lists. E5 ad vectors
+  are encoded in batches with progress, then cached in the Git-ignored
+  `00_Data/nlp-search-cache/` directory. Cache matching includes the dataset,
+  model revision, input limit and package versions; changes trigger a reported
+  rebuild. A corrupt cache raises an error rather than silently giving results.
+  BM25 searches full cleaned descriptions; E5 uses at most 512 tokens, including
+  its prefix and special markers. The notebook reports how many ads exceed the
+  actual model limit. No full-ad precision/recall is calculated: the excerpt
+  judgments do not cover this larger collection. Prepare encoding before the
+  lecture; use one query comparison as the short demonstration.
 - Bandit clicks use invented 8%/12% probabilities. There are no real user logs.
 - [email_spam_text.csv.gz](../../../00_Data/email_spam_text.csv.gz) supplies the
   selected original email texts for word2vec training. Preserve its partitions

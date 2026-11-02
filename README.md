@@ -141,7 +141,11 @@ behind Week 08 page 37, with the original chronological splits and category
 labels. It compares frequency, TF-IDF and frozen multilingual BERT using accuracy,
 macro-F1 and top-3 hit rate. The instructor confirmed distribution permission
 for this classification subset and repository audience.
-Retrieval still uses only approved short excerpts with provisional judgments.
+Lecture 3 evaluates retrieval on approved short excerpts with provisional
+judgments, then adds interactive BM25/E5/hybrid search over the same 5,011
+real ads. Its local E5 vector cache avoids re-encoding ads for each query.
+The larger collection has no full-ad relevance judgments and receives no
+automatic precision/recall scores.
 The source 30,000-ad Parquet file is not copied.
 Read the [data notes](00_Data/nlp_data_readme.md)
 before redistribution. First use of BERT/E5 downloads public weights; text is processed
